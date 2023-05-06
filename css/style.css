@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+}
+
+header h3 a {
+    font-family: 'Amsterdam Signature One', cursive;
+    color: #fec02f;
+    margin-left: 5px;
+    text-decoration: none;
+    /* fallback font for devices that don't support the custom font */
+}
+
+header > nav {
+
+}
+
+header li a {
+    color: #fec02f;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fec02f;
+    margin: 5px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-col-xsm-1{width: 8.33%;}
+
+    .custom-col-xsm-11 {width: 91.66%;}
+
+    header {
+        display: flex;
+        height: 60px;
+    }
+
+    header > div{
+        display: flex;
+    }
+
+    header > div > h3 {
+        margin-top: 15px;
+    }
+
+    .hamburger {
+        margin: 15px 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .custom-col-sm-1{width: 8.33%;}
+
+    .custom-col-sm-11 {width: 91.66%;}
+
+    header {
+        display: flex;
+        height: 70px;
+    }
+
+    header > div{
+        display: flex;
+    }
+
+    header > div > h3 {
+        margin-top: 20px;
+    }
+
+    .hamburger {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        height: 80px;
+    }
+
+    header > div{
+        display: flex;
+    }
+
+    header > div > h3 {
+        margin-top: 25px;
+    }
+
+    .menu li a {
+        margin: 23px 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        display: flex;
+        height: 90px;
+    }
+
+    header > div{
+        display: flex;
+    }
+
+    header > div > h3 {
+        margin-top: 30px;
+    }
+
+    .menu li a {
+        margin: 28px 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        height: 100px;
+    }
+
+    header > div{
+        display: flex;
+    }
+
+    header > div > h3 {
+        margin-top: 35px;
+    }
+
+    .menu li a {
+        margin: 33px 20px;
+        font-size: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'Amsterdam Signature One';
+    src: url('/fonts/amsterdam-signature-one.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
